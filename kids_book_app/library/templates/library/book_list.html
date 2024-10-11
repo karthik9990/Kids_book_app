@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Books{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">All Books</h2>
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    {% for book in books %}
+    <div class="col">
+        <div class="card h-100">
+            {% if book.cover_image %}
+            <img src="{{ book.cover_image.url }}" class="card-img-top book-cover" alt="{{ book.title }}">
+            {% else %}
+            <img src="/static/default_cover.jpg" class="card-img-top book-cover" alt="Default Cover">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ book.title }}</h5>
+                <p class="card-text">By {{ book.author }}</p>
+                <a href="{% url 'book_detail' book.id %}" class="btn btn-primary">Read Book</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
