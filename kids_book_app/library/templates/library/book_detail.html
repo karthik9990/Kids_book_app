@@ -1,18 +1,24 @@
-{% extends 'base.html' %}
+{% extends 'library/base.html' %}
 
 {% block title %}{{ book.title }}{% endblock %}
 
 {% block content %}
-<div class="container">
-    <h2>{{ book.title }}</h2>
-    <p>Author: {{ book.author }}</p>
-    <p>Description: {{ book.description }}</p>
-    {% if book.cover_image %}
-    <img src="{{ book.cover_image.url }}" alt="{{ book.title }}">
-    {% endif %}
-    {% if book.pdf_file %}
-    <p><a href="{{ book.pdf_file.url }}" class="btn btn-secondary" download>Download PDF</a></p>
-    {% endif %}
-    <p><a href="{% url 'book_list' %}" class="btn btn-secondary">Back to Books</a></p>
+<div class="card">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            {% if book.cover_image %}
+            <img src="{{ book.cover_image.url }}" class="card-img" alt="{{ book.title }}">
+            {% endif %}
+        </div>
+        <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{ book.title }}</h5>
+                <p class="card-text">By {{ book.author }}</p>
+                {% if book.pdf %}
+                <a href="{{ book.pdf.url }}" download class="btn btn-success">Download PDF</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}

@@ -1,0 +1,31 @@
+from django.shortcuts import render, get_object_or_404
+from .models import Book  # Import the Book model
+
+
+# View for the homepage, showing recent books
+def home(request):
+    # Get the 10 most recent books
+    recent_books = Book.objects.order_by('-id')[:10]
+    return render(request, 'library/home.html', {'recent_books': recent_books})
+
+
+# View for listing all books
+def book_list(request):
+    books = Book.objects.all()  # Get all books
+    return render(request, 'library/book_list.html', {'books': books})
+
+
+# View for displaying details of a single book
+def book_detail(request, pk):
+    book = get_object_or_404(Book, pk=pk)  # Get the book object by primary key (id) or return a 404
+    return render(request, 'library/book_detail.html', {'book': book})
+
+
+# Static page for "About Us"
+def about_us(request):
+    return render(request, 'library/about_us.html')
+
+
+# Static page for "Contact Us"
+def contact_us(request):
+    return render(request, 'library/contact_us.html')

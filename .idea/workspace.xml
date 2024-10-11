@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c037e1-af38-4035-9183-a4912840ba4f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kids_book_app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kids_book_app/library/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/about_us.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/book_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/book_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/contact_us.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kids_book_app/library/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kids_book_app/static/css/style.css" afterDir="false" />
+    <list default="true" id="19c037e1-af38-4035-9183-a4912840ba4f" name="Changes" comment="so far app commits">
+      <change afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kids_book_app/library/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kids_book_app/library/templates/library/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/about_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kids_book_app/library/templates/library/book_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/book_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kids_book_app/library/templates/library/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/book_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kids_book_app/library/templates/library/contact_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/contact_us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kids_book_app/library/templates/library/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kids_book_app/library/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/library/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kids_book_app/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/static/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +52,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ktadakapalli\kids_book_app\kids_book_app\library\templates" />
       <recent name="C:\Users\ktadakapalli\kids_book_app\kids_book_app\library\templates\library" />
+      <recent name="C:\Users\ktadakapalli\kids_book_app\kids_book_app\library\templates" />
       <recent name="C:\Users\ktadakapalli\kids_book_app\kids_book_app\library" />
     </key>
   </component>
@@ -77,6 +73,19 @@
       <option name="presentableId" value="Default" />
       <updated>1728620526065</updated>
     </task>
+    <task id="LOCAL-00001" summary="so far app commits">
+      <option name="closed" value="true" />
+      <created>1728670020823</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728670020823</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="so far app commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="so far app commits" />
   </component>
 </project>
