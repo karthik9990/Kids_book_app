@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19c037e1-af38-4035-9183-a4912840ba4f" name="Changes" comment="App looks great and it is working great with all the functionality.">
-      <change afterPath="$PROJECT_DIR$/kids_book_app/library/templates/accounts/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kids_book_app/library/templates/accounts/signup.html" afterDir="false" />
+    <list default="true" id="19c037e1-af38-4035-9183-a4912840ba4f" name="Changes" comment="Added lots of functionality to the app.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kids_book_app/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kids_book_app/kids_book_app/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/kids_book_app/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kids_book_app/kids_book_app/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/kids_book_app/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kids_book_app/library/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/library/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kids_book_app/library/templates/library/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/kids_book_app/library/templates/library/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +24,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2nHCHPhdDEDgpddvGT8wGSV0TvQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -45,7 +39,8 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -88,12 +83,21 @@
       <option name="project" value="LOCAL" />
       <updated>1728672655631</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added lots of functionality to the app.">
+      <option name="closed" value="true" />
+      <created>1728685977634</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728685977634</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="so far app commits" />
     <MESSAGE value="App looks great and it is working great with all the functionality." />
-    <option name="LAST_COMMIT_MESSAGE" value="App looks great and it is working great with all the functionality." />
+    <MESSAGE value="Added lots of functionality to the app." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added lots of functionality to the app." />
   </component>
 </project>
