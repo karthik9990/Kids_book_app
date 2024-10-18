@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Book  # Import the Book model
+from django.core.paginator import Paginator
 
 
 # View for the homepage, showing recent books
@@ -12,6 +13,9 @@ def home(request):
 # View for listing all books
 def book_list(request):
     books = Book.objects.all()  # Get all books
+    paginator = Paginator(book_list, 10)  # Show 10 books per page.
+    page_number = request.GET.get('page')
+    books = paginator.get_page(page_number)
     return render(request, 'library/book_list.html', {'books': books})
 
 
@@ -29,3 +33,8 @@ def about_us(request):
 # Static page for "Contact Us"
 def contact_us(request):
     return render(request, 'library/contact_us.html')
+
+
+def pdf_viewer(request, pk):
+    book = get_object_or_404(Book, pk=pk)
+    return render(request, 'library/pdf_viewer.html', {'book': book})

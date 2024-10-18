@@ -18,8 +18,8 @@
                 <a href="{{ book.pdf_file.url }}" download class="btn btn-success">Download PDF</a>
                 {% else %}
                 <p class="text-muted">No PDF available for download.</p>
-<!--                <a href="{{ book.pdf.url }}" download class="btn btn-success">Download PDF</a>-->
                 {% endif %}
+                <a href="{% url 'pdf_viewer' book.pk %}" class="btn btn-primary">View PDF</a>
             </div>
         </div>
     </div>

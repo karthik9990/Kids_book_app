@@ -1,0 +1,79 @@
+{% extends 'library/base.html' %}
+
+{% block title %}{{ book.title }}{% endblock %}
+
+{% block content %}
+<div id="pdf-viewer" style="width: 100%; height: 600px;"></div>
+<div id="pagination">
+    <button id="prev">Previous</button>
+    <span id="page_num"></span> / <span id="page_count"></span>
+    <button id="next">Next</button>
+</div>
+
+<script>
+    const url = '{{ book.pdf_file.url }}'; // URL of the PDF
+
+    let pdfDoc = null,
+        pageNum = 1,
+        pageIsRendering = false,
+        pageNumIsPending = null;
+
+    const pdfViewer = document.getElementById('pdf-viewer');
+
+    // Render the page
+    const renderPage = num => {
+        pageIsRendering = true;
+
+        pdfDoc.getPage(num).then(page => {
+            const scale = 1.5;
+            const viewport = page.getViewport({ scale });
+
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            pdfViewer.appendChild(canvas);
+
+            const renderCtx = {
+                canvasContext: ctx,
+                viewport: viewport
+            };
+
+            page.render(renderCtx).promise.then(() => {
+                pageIsRendering = false;
+
+                if (pageNumIsPending !== null) {
+                    renderPage(pageNumIsPending);
+                    pageNumIsPending = null;
+                }
+            });
+        });
+
+        document.getElementById('page_num').textContent = num;
+    };
+
+    // Load the PDF
+    pdfjsLib.getDocument(url).promise.then(pdfDoc_ => {
+        pdfDoc = pdfDoc_;
+        document.getElementById('page_count').textContent = pdfDoc.numPages;
+        renderPage(pageNum);
+    });
+
+    // Button Events
+    document.getElementById('prev').addEventListener('click', () => {
+        if (pageNum <= 1) return;
+        pageNum--;
+        renderPage(pageNum);
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+        if (pageNum >= pdfDoc.numPages) return;
+        pageNum++;
+        renderPage(pageNum);
+    });
+    const url = '{{ book.pdf_file.url }}';
+    console.log(url);
+
+</script>
+{% endblock %}
