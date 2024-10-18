@@ -14,8 +14,11 @@
             <div class="card-body">
                 <h5 class="card-title">{{ book.title }}</h5>
                 <p class="card-text">By {{ book.author }}</p>
-                {% if book.pdf %}
-                <a href="{{ book.pdf.url }}" download class="btn btn-success">Download PDF</a>
+                {% if book.pdf_file %}
+                <a href="{{ book.pdf_file.url }}" download class="btn btn-success">Download PDF</a>
+                {% else %}
+                <p class="text-muted">No PDF available for download.</p>
+<!--                <a href="{{ book.pdf.url }}" download class="btn btn-success">Download PDF</a>-->
                 {% endif %}
             </div>
         </div>
